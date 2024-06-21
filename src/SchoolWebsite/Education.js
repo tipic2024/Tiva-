@@ -7,13 +7,13 @@ const cardsData = [
   {
     image: "./EducationImags/valuedbased.jpg",
     title: "Value Based Education",
-    description: "Emphasizing moral and ethical values in the curriculum to instill integrity, empathy, and a sense of responsibility in students."
+    description: "Emphasizing moral and ethical values in the curriculum to instill integrity, empathy, and a sense of responsibility in students. Learning respects for elders and similar cultureal values.  "
   },
   
   {
     image: "./Health.jpeg",
     title: "Healthcare Facilities",
-    description: "Providing dedicated healthcare facilities for students to ensure their physical well-being and address any health concerns promptly."
+    description: "Providing dedicated healthcare facilities for students physical well-being and address any health concerns promptly. Having a tie-up with SAVTOL AYURVEDA HEALTHCARE AND RESEARCH FOUNDATION. "
   },
   {
     image: "./EducationImags/ComprehensiveKnowledge.jpg",

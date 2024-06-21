@@ -6,11 +6,11 @@ import 'aos/dist/aos.css';
 const photos = [
   { src: require('./GalleryImages/S7.jpg') },
   { src: require('./GalleryImages/S2.jpg') },
-  { src: require('./GalleryImages/S3.jpg') },
+  { src: require('./indoor sport.png') },
   { src: require('./GalleryImages/S4.jpg') },
   { src: require('./GalleryImages/S5.jpg') },
   { src: require('./GalleryImages/S8.jpg') },
-  { src: require('./GalleryImages/S7.jpg') },
+  { src: require('./Health care camp.png') },
   { src: require('./GalleryImages/S1.jpg') },
  
 ]

@@ -36,7 +36,7 @@ const GurukulData = [
     id: 6,
     name: 'Yoga and Meditation Hall',
     paragraph:"Prabhuram Gurukul's Yoga and Meditation Hall is a peaceful sanctuary dedicated to the physical, mental, and spiritual well-being of students. The hall is spacious, well-ventilated, and designed to create a tranquil ambiance. It is equipped with yoga mats and cushions, providing a comfortable space for practice. Skilled instructors lead daily yoga sessions, focusing on flexibility, strength, and relaxation techniques. Meditation sessions help students develop mindfulness, concentration, and emotional balance. The hall also hosts workshops on stress management and holistic health practices. ",
-    imagePath: './meditation.jpg'
+    imagePath: './yoga3.png'
   },
   {
     id: 7,

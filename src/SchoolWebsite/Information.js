@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
-
+ 
 const Information = () => {
   const initialFormData = {
     name: '',
@@ -14,24 +15,24 @@ const Information = () => {
     terms: false,
    
   };
-
+ 
   const [formData, setFormData] = useState(initialFormData);
   const [submitted, setSubmitted] = useState(null);
-
+ 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     const val = type === 'checkbox' ? checked : value;
-
+ 
     setFormData((prevFormData) => ({
       ...prevFormData,
       [name]: val,
     }));
   };
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://prabhuramgurukul/Admission.php', formData);
+      const response = await axios.post('Admission.php', formData);
       console.log('Response:', response.data);
       if (response.data === "SUCCESS") {
         setSubmitted('success');
@@ -45,7 +46,7 @@ const Information = () => {
     }
     // console.log('hello')
   };
-
+ 
   return (
     <div className='bg-slate-200'>
       <div className="text-lg text-gray-700 mb-6 text-center">
@@ -169,7 +170,7 @@ const Information = () => {
           {/* Standard */}
           <div className="mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="standard">
-              Standard
+              Age
             </label>
             <select
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -179,12 +180,14 @@ const Information = () => {
               onChange={handleChange}
               required
             >
-              <option value="">Select Standard</option>
-              <option value="Playgroup">Playgroup</option>
-              <option value="Nursery">Nursery</option>
-              <option value="UKG">UKG</option>
-              <option value="LKG">LKG</option>
-              
+              <option value="">Select Age</option>
+              <option value="2 Year">2 Year</option>
+                <option value="3 Year">3 Year</option>
+                <option value="4 Year">4 Year</option>
+                <option value="5 Year">5 Year</option>
+                <option value="6 Year">6 Year</option>
+                <option value="7 Year">7 Year</option>
+             
             </select>
           </div>
           {/* Address */}
@@ -203,7 +206,7 @@ const Information = () => {
             ></textarea>
           </div>
           {/* New Field */}
-        
+       
           {/* Terms and Conditions */}
           <div className="block text-white text-lg font-serif font-bold mb-2">
             <input
@@ -219,11 +222,11 @@ const Information = () => {
               I agree to the terms and conditions
             </label>
           </div>
-
-
-
-          
-
+ 
+ 
+ 
+         
+ 
          {submitted === 'success' && (
             <div className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-6" role="alert">
               <p>Form submitted successfully!</p>
@@ -233,9 +236,9 @@ const Information = () => {
             <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-6" role="alert">
               <p>There was an error submitting the form!</p>
             </div>
-          )} 
-
-
+          )}
+ 
+ 
           {/* Submit Button */}
           <div className="flex items-center justify-center mt-6">
             <button
@@ -259,7 +262,7 @@ const Information = () => {
           <li> Children Age Group 2.5 years to 7 years</li>
           </ul>
         </div>
-        
+       
         <div className="bg-slate-100 rounded-lg text-left shadow-lg p-6 ">
           <h2 className="text-2xl font-semibold text-gray-800 font-serif mb-4">Documents for Submission</h2>
           <ul className="list-disc pl-6 text-gray-700">
@@ -275,5 +278,6 @@ const Information = () => {
     </div>
   );
 };
-
+ 
 export default Information;
+ 

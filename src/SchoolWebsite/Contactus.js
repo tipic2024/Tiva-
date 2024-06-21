@@ -1,6 +1,7 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
-
+ 
 export default function Contactus() {
   const [formData, setFormData] = useState({
     name: '',
@@ -10,7 +11,7 @@ export default function Contactus() {
   });
   const [submissionStatus, setSubmissionStatus] = useState(null);
   const [errors, setErrors] = useState({});
-
+ 
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
@@ -18,7 +19,7 @@ export default function Contactus() {
       validateMobile(value);
     }
   };
-
+ 
   const validateMobile = (mobile) => {
     const mobileRegex = /^[0-9]{10}$/;
     if (!mobileRegex.test(mobile)) {
@@ -33,12 +34,12 @@ export default function Contactus() {
       });
     }
   };
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://prabhuramgurukul/contact.php',
+        'contact.php',
         formData,
         {
           headers: {
@@ -59,9 +60,9 @@ export default function Contactus() {
       setSubmissionStatus('error');
     }
   };
-  
-  
-
+ 
+ 
+ 
   return (
     <section className="bg-[#eee2cf]">
       <div id="map" className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
@@ -85,11 +86,11 @@ export default function Contactus() {
             <div className="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-6" role="alert">
               <p>There was an error submitting the form!</p>
             </div>
-          )} 
-
-
-
-
+          )}
+ 
+ 
+ 
+ 
           <div className=" flex flex-col col-1">
             <h1 className='uppercase md:text-3xl text-2xl text-center font-serif font-bold text-gray-900 mb-10'>Contact Us</h1>
             <div className="flex flex-wrap">
@@ -178,3 +179,4 @@ export default function Contactus() {
     </section>
   );
 }
+ 

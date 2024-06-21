@@ -1,9 +1,10 @@
+
 import React, { useState } from 'react';
 import axios from 'axios';
 import backgroundImage from './GurukulBg3.jpg';
 import '../index.css';
 import { motion } from 'framer-motion';
-
+ 
 const HeroSection = () => {
   const initialFormData = {
     name: '',
@@ -12,10 +13,10 @@ const HeroSection = () => {
     standard: '',
     gender: '',
   };
-
+ 
   const [formData, setFormData] = useState(initialFormData);
   const [submissionStatus, setSubmissionStatus] = useState(null);
-
+ 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
@@ -23,12 +24,12 @@ const HeroSection = () => {
       [name]: value,
     }));
   };
-
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Called Successfully", formData);
     try {
-      const response = await axios.post('http://prabhuramgurukul/enquiry.php', formData);
+      const response = await axios.post('enquiry.php', formData);
       console.log('Response:', response.data);
       if (response.data === "SUCCESS") {
         setSubmissionStatus('success');
@@ -41,7 +42,7 @@ const HeroSection = () => {
       setSubmissionStatus('error');
     }
   };
-
+ 
   return (
     <>
       <div
@@ -58,9 +59,9 @@ const HeroSection = () => {
             Prabhuram Gurukul
           </motion.h1>
         </div>
-
+ 
         <form onSubmit={handleSubmit} className="container max-w-sm mx-auto p-8 bg-sky-950 rounded-lg shadow-lg mr-10 mb-20" data-aos="fade-left">
-          
+         
           <h1 className="text-xl font-serif text-white font-bold mb-6">ADMISSION ENQUIRY FOR THE SESSION 2024-25</h1>
           <div className="text-left">
             <div className="mb-4">
@@ -128,11 +129,18 @@ const HeroSection = () => {
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               >
-                <option value="">Select standard</option>
-                <option value="playgroup">Playgroup</option>
-                <option value="nursery">Nursery</option>
-                <option value="LKG">Lkg</option>
-                <option value="UKG">Ukg</option>
+                <option value="">Select Age</option>
+                <option value="2 Year">2 Year</option>
+                <option value="3 Year">3 Year</option>
+                <option value="4 Year">4 Year</option>
+                <option value="5 Year">5 Year</option>
+                <option value="6 Year">6 Year</option>
+                <option value="7 Year">7 Year</option>
+
+               
+
+
+               
               </select>
             </div>
             {submissionStatus === 'success' && (
@@ -149,7 +157,7 @@ const HeroSection = () => {
               </div>
             </div>
           )}
-
+ 
             <div className="flex items-center justify-between">
               <button
                 className="bg-blue-500 hover:bg-blue-700 text-white justify-center flex font-bold py-2 px-4 ml-28 rounded focus:outline-none focus:shadow-outline"
@@ -164,5 +172,6 @@ const HeroSection = () => {
     </>
   );
 };
-
+ 
 export default HeroSection;
+ 

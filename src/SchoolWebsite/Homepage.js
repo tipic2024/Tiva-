@@ -12,6 +12,8 @@ import WhyGurukulRun from './WhyGurukulRun';
 import AboutusRun from './AboutusRun';
 import Events from './Event';
 import Syllabus from './Syllabus';
+import HeroSection from './HeroSection';
+
 
 
 function Homepage() {
@@ -24,6 +26,8 @@ function Homepage() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/aboutuspage" element={<AboutusRun/>} />
+          <Route path="/HeroSection" element={<HeroSection/>} />
+
           <Route path="/admission" element={<Information/>} />
           <Route path="/Contact-us" element={<Contactus/>} />
           <Route path="/aboutmanagement" element={<ProfileRun/>} />
