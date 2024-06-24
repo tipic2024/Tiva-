@@ -150,7 +150,7 @@ const Information = () => {
             />
           </div>
           {/* Transport Option */}
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="transportOption">
               Transport Option
             </label>
@@ -166,7 +166,7 @@ const Information = () => {
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
-          </div>
+          </div> */}
           {/* Standard */}
           <div className="mb-4">
             <label className="block text-white text-lg font-serif font-bold mb-2" htmlFor="standard">

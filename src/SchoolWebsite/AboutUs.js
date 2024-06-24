@@ -16,28 +16,34 @@ const AboutUs = () => {
     {
       image: require('./Sirimg/Sandip D. Shete2.jpg'),
       title: "Mr. Sandip D. Shete",
-      description: "(Founder and Managing Director Prabhuram Gurukul, Nashik)"
+      description: "(Founder and Managing Director",
+      d_School: "Prabhuram Gurukul, Nashik)"
     },
     {
       image: require('./Founders/Ram.jpeg'),
       title: "Dr. Shubham S. Shete",
-      description: "(Founder and Principal of Prabhuram Gurukul)"
+      description: "(Founder, Director & Chief Advisor",
+      d_School: "Prabhuram Gurukul, Nashik)"
     },
     {
       image: require('./Sirimg/Sunita S. Shete2.jpg'),
       title: "Mrs. Sunita S. Shete",
-      description: "(Founder and Principal, Prabhuram Gurukul, Nashik)"
-    },
-    {
-      image: require('./Sirimg/Urmila .jpg'),
-      title: "Mrs. Urmila Sahane",
-      description: "(Mrs. Urmila Sahane Chief Teacher Prabhuram Gurukul, Nashik)"
+      description:"(Founder  and  Principal",
+      d_School: "Prabhuram Gurukul, Nashik)"
     },
     {
       image: require('./Sirimg/A4.jpg'),
       title: "Miss Suhani S. Shete",
-      description: "(Yoga and Meditation Teacher, Prabhuram Gurukul, Nashik)"
+      description: "(Yoga and Meditation Teacher",
+      d_School: "Prabhuram Gurukul, Nashik)"
     },
+    {
+      image: require('./Sirimg/Urmila .jpg'),
+      title: "Mrs. Urmila Sahane",
+      description: "(Chief Teacher",
+      d_School: "Prabhuram Gurukul, Nashik)"
+    },
+    
   ];
 
   const firstHalf = cardsData.slice(0, 3);
@@ -75,7 +81,8 @@ const AboutUs = () => {
               <div className="px-6 py-4 flex-1 flex flex-col justify-between">
                 <div>
                   <div className="font-bold text-xl mb-2">{card.title}</div>
-                  <p className="text-gray-700 text-base">{card.description}</p>
+                  <p className="text-gray-700 text-base text-sm">{card.description}</p>
+                  <p className="text-gray-700 text-base text-sm">{card.d_School}</p>
                 </div>
               </div>
             </div>
@@ -93,6 +100,7 @@ const AboutUs = () => {
                 <div>
                   <div className="font-bold text-xl mb-2">{card.title}</div>
                   <p className="text-gray-700 text-base">{card.description}</p>
+                  <p className="text-gray-700 text-base">{card.d_School}</p>
                 </div>
               </div>
             </div>

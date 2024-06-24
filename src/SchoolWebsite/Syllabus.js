@@ -2,7 +2,7 @@
 import React from 'react';
 
 const images = [
-    { heading: 'Syllabus', img: require('./GalleryImages/Syllabus.jpg') },
+    { heading: 'Syllabus', img: require('./GalleryImages/DocScanner 21-Jun-2024 5-43 pm.pdf.png') },
     { heading: 'Outdoor Sports', img: require('./GalleryImages/SyllabusOutdoor.jpg') },
     { heading: 'Indor Sports', img: require('./GalleryImages/SyllabusIndoor.jpg') },
 ];

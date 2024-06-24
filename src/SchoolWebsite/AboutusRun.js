@@ -33,8 +33,8 @@ const AboutData = [
   {
     id: 4,
     name: 'Dedicated Healthcare Services',
-    imagePath: './Healthcare.jpg',
-    paragraph: "Understanding the importance of health in a student's life, we provide separate healthcare facilities within the Gurukul. Our dedicated health professionals ensure that every student receives the necessary medical attention and guidance to maintain their physical health"
+    imagePath: './Health.jpeg',
+    paragraph: "Understanding the importance of health in a student's life, we provide separate healthcare facilities within the Gurukul. Our dedicated health professionals ensure that every student receives the necessary medical attention and guidance to maintain their physical health. We have tie-up Svatol Ayureveda - Healthcare and Research Foundation."
   },
   {
     id: 5,
