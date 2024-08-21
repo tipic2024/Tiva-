@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const cardsData = [
   {
-    // image: "../../Assets/HeroSection/HeroSection.jpg",
+    // image: "..\..\Assets\HeroSection\HeroSection.jpg",
     title: "Welcome to Tiva Rewir",
     description: "Tata international vehicle applications pvt ltd– Leading Scrap Dealers in Pune.              At Tiva Rewire, we're the top scrap car dealers in Pune, specializing in eco-friendly vehicle disposal. We handle all types of scrap, including cars and trucks, ensuring responsible and efficient disposal with a focus on sustainability. "
   },
