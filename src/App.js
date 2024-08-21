@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import './App.css';
-import Homepage from './SchoolWebsite/Homepage';
+import Routes from './TivaRewire/Routes';
+import PageRoutes from './TivaRewire/Routes';
+
 
 // Keyframes for the pulse animation
 const pulse = keyframes`
@@ -49,10 +51,10 @@ function App() {
     <div className="App">
       {loading ? (
         <LoadingContainer>
-          <LoadingImage src={require("./SchoolWebsite/Logo1.2.png")} alt="Loading..." />
+          <LoadingImage src={require("./TivaRewire/Logos/Tata_Logo.png")} alt="Loading..." />
         </LoadingContainer>
       ) : (
-        <Homepage />
+        <PageRoutes/>
       )}
     </div>
   );
