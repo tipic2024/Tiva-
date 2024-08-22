@@ -77,7 +77,7 @@ function SpareParts() {
       </div>
 
       {/* Separator */}
-      <hr className="border-t-2 border-gray-300 my-6" />
+      {/* <hr className="border-t-2 border-gray-300 my-6" /> */}
 
       {/* Second Row of Cards  */}
       <div className="flex flex-wrap justify-center">

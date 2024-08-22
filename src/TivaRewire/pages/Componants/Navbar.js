@@ -126,7 +126,7 @@ export default function Navbar() {
                                         <Link to="/ScrapVehicle" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Scrap Your Vehicle</Link>
                                     </li>
                                     <li className="border-b py-2 max-lg:ml-4">
-                                        <Link to="/buyRefurbished" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Buy Refurbished Vehicle</Link>
+                                        <Link to="/SpareParts" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Buy Refurbished Vehicle</Link>
                                     </li>
                                    
                                 </ul>

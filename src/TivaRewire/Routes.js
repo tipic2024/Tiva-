@@ -7,6 +7,8 @@ import Contactus from './pages/ContactUs';
 import FAQ from './pages/FAQ';
 import BoardOfDirector from './pages/BoardOfDirector';
 import Scrap from './pages/ScrapYourVehicle';
+import SpareParts from './pages/Componants/SpareParts';
+
 
 function PageRoutes() {
   return (
@@ -19,6 +21,8 @@ function PageRoutes() {
                 <Route path="/About-us" element={<BoardOfDirector/>} />
                 <Route path="/FAQs" element={<FAQ/>} />
                 <Route path="/ScrapVehicle" element={<Scrap/>} />
+                <Route path="/SpareParts" element={<SpareParts/>} />
+
 
                 
 
