@@ -11,47 +11,50 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-[#70505055] font-sans dark:bg-gray-900 py-12">
+    <footer className="bg-[#11186B] font-sans dark:bg-gray-900 ">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4">
           {/* Logo and Description */}
           <div className="flex flex-col">
-            <p className="text-lg pb-3 text-black text-left text-wrap dark:text-white font-serif mt-1">
+            <div className='justify-center'>
+              <img src={require("../../Logos/rewireLogoTransperant.png") } className='object-scale-down h-32 w-32' />
+            </div>
+            <p className="text-lg pb-3 text-white text-left text-wrap dark:text-white font-serif ">
             Tiva Rewire has grown into a leading, diversified automotive group with a pan-India presence.
             </p>
           </div>
           {/* Connect With Us */}
-          <div className="text-lg font-serif flex mr-14 flex-col">
-            <p className="font-semibold text-gray-800 pr-10  font-serif ml-16  text-lg mb-4">Connect With Us</p>
-            <div className="flex flex-col space-y-4">
+          <div className="text-lg font-serif flex mr-14 flex-col w-full pt-12">
+            <p className="font-semibold text-white pr-10  font-serif ml-16  text-lg mb-4">Connect With Us</p>
+            <div className="flex flex-col space-y-4 pt-7">
               <div className="flex items-center">
                 <div className="ml-10 pl-10 text-lg font-serif">
-                  <p className="text-gray-950 dark:text-gray-300 font-sans">+91 840894840</p>
-                  <p className="text-gray-950 dark:text-gray-300 font-sans">+91 8007132800</p>
-                  <p className="text-black dark:text-gray-300 font-sans">+91 8408863840</p>
+                  <p className="text-white dark:text-gray-300 font-sans">+91 840894840</p>
+                  <p className="text-white dark:text-gray-300 font-sans">+91 8007132800</p>
+                  <p className="text-white dark:text-gray-300 font-sans">+91 8408863840</p>
                 </div>
               </div>
             </div>
           </div>
           {/* Quick Links */}
           <div className="text-lg font-serif flex mr-14 flex-col">
-            <p className="font-semibold text-gray-800 dark:text-white mb-4">Quick Links</p>
-            <div className="flex flex-col space-y-2">
-              <Link to="/" onClick={scrollToTop} className="text-black dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer text-blue-500 hover:text-red-500 dark:hover:text-blue-400">Home</Link >
-              <Link to="/aboutuspage" onClick={scrollToTop} className="text-black dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">About Us</Link >
-              <Link to="/admission" onClick={scrollToTop} className="text-black dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">Scrap Your Vehicle</Link >
+            <p className="font-semibold text-white dark:text-white mb-4 pt-12">Quick Links</p>
+            <div className="flex flex-col space-y-2 pt-6">
+              <Link to="/" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer text-blue-500 hover:text-red-500 dark:hover:text-blue-400">Home</Link >
+              <Link to="/aboutuspage" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">About Us</Link >
+              <Link to="/admission" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">Scrap Your Vehicle</Link >
             </div>
           </div>
           {/* Visit Us */}
           <div className="flex flex-col">
-            <p className="font-semibold font-serif text-gray-800 dark:text-white text-lg pr-14 mb-4">Visit Us</p>
-            <div className="flex items-center">
+            <p className="font-semibold font-serif text-white dark:text-white text-lg pr-14 mb-4 pt-12">Visit Us</p>
+            <div className="flex items-center pt-6">
               <div>
-                <p className="text-left text-black dark:text-gray-300 align-middle pl-10 flex justify-end text-lg font-sans">
-                TIVA MOTORS PVT LTD<br />
-                2/2 MITROL - DEEGHOT ROAD VILLAGE,<br />
-                DEEGHOT TEHSIL HODAL PALWAL (HARYANA),<br />
-                HARYANA&nbsp; 121105
+                <p className="text-left text-white text-sm dark:text-gray-300 align-middle pl-10 flex justify-end text-lg font-sans">
+                TATA INTERNATIONAL VEHICAL APPLICATIONS PVT LTD,<br />
+                Gat No. 281 & 284,<br />
+                Village Santosh Nagar ,Waki<br />
+                Taluka Khed, Pune, Maharashtra 410501
                 </p>
               </div>
             </div>
@@ -67,7 +70,7 @@ function Footer() {
       {/* Divider */}
       <hr className="my-6 border-gray-200 dark:border-gray-700" />
       {/* Copyright */}
-      <div className="bg-[#3f3338] h-16 flex items-center justify-center">
+      <div className="bg-[#11186B] h-16 flex items-center justify-center">
         <p className="font-sans text-[#FFF6E7] text-center text-md">© {new Date().getFullYear()} Tiva Rewire. All rights reserved.</p>
       </div>
     </footer>
