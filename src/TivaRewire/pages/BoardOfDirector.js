@@ -16,7 +16,7 @@ export default function BoardOfDirector() {
         </div>
         <div className="max-w-screen-xl  lg:mt-9 bg-[#FEFFFB] flex flex-col lg:flex-row items-center justify-center  ">
       
-            <div className=" sm:w-5/6 p-12 bg-orange-200 text-start lg:justify-center border-4 ">
+            <div className=" sm:w-5/6 p-14 bg-orange-200 text-start lg:justify-center border-4 ">
                 <div>
                    
                     <p className="text-black text-justify font-serif lg:mt-2 mt-3 ">
@@ -47,10 +47,9 @@ export default function BoardOfDirector() {
                     <p className=' font-serif text-2xl'>Chief Finance Officer</p>
                 </div>
             </div>
-            <div className="sm:w-5/6 sm:mt-2 mb-1 bg-orange-200 text-start lg:justify-center border-4">
-                <div className="mt-1">
-                    
 
+            <div className="sm:w-5/6 sm:mt-2 mb-1 p-4 bg-orange-200 text-start lg:justify-center border-4">
+                <div className="mt-1">
                     <p className="font-serif p-6 mt-1 justify-start  ">
                     <b className='font-serif p-4 text-14px'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"From Rust to Renewal, for a Cleaner Future."<br/>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Eco-Smart and Cost-Savvy, We Care Everyone"</b><br/><br/>
