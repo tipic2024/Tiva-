@@ -7,8 +7,8 @@ import Contactus from './pages/ContactUs';
 import FAQ from './pages/FAQ';
 import BoardOfDirector from './pages/BoardOfDirector';
 import Scrap from './pages/ScrapYourVehicle';
-import SpareParts from './pages/Componants/SpareParts';
 import MediaCoverage from './pages/MediaCoverage';
+import SpareParts from './pages/SpareParts';
 
 
 function PageRoutes() {

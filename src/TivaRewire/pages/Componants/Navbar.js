@@ -97,10 +97,11 @@ export default function Navbar() {
                                         <path
                                             d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
                                             data-name="16" data-original="#000000"
+                                             fill="#FFFFFF"
                                         />
                                     </svg>
                                 </button>
-                                <ul className={`absolute ${dropdownAbout ? 'block' : 'hidden'} shadow-lg bg-[#767171] backdrop-blur-3xl px-6 pb-4 pt-6 space-y-3 lg:top-6 max-lg:top-8 -left-6 min-w-[250px] z-50 max-lg:pl-4`}>
+                                <ul className={`absolute ${dropdownAbout ? 'block' : 'hidden'} shadow-lg bg-[#11186B] backdrop-blur-3xl px-6 pb-4 pt-6 space-y-3 lg:top-7 max-lg:top-8 -left-6 min-w-[250px] z-50 max-lg:pl-4`}>
                                     <li className="border-b py-2 max-lg:ml-4">
                                         <Link to="/whoWeAre" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Who We Are</Link>
                                     </li>
@@ -118,15 +119,16 @@ export default function Navbar() {
                                         <path
                                             d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
                                             data-name="16" data-original="#000000"
+                                             fill="#FFFFFF"
                                         />
                                     </svg>
                                 </button>
-                                <ul className={`absolute ${dropdownAdmission ? 'block' : 'hidden'} shadow-lg bg-[#767171] backdrop-blur-3xl px-6 pb-4 pt-6 space-y-3 lg:top-6 max-lg:top-8 -left-6 min-w-[250px] z-50 max-lg:pl-4`}>
+                                <ul className={`absolute ${dropdownAdmission ? 'block' : 'hidden'} shadow-lg bg-[#11186B] backdrop-blur-3xl px-6 pb-4 pt-6 space-y-3 lg:top-7 max-lg:top-8 -left-6 min-w-[250px] z-50 max-lg:pl-4`}>
                                     <li className="border-b py-2 max-lg:ml-4">
                                         <Link to="/ScrapVehicle" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Scrap Your Vehicle</Link>
                                     </li>
                                     <li className="border-b py-2 max-lg:ml-4">
-                                        <Link to="/SpareParts" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Buy Refurbished Vehicle</Link>
+                                        <Link to="/SpareParts" onClick={handleLinkClick} className="hover:text-white text-white text-[15px] font-serif block text-left hover:bg-gray-700 px-4 py-2 rounded-md uppercase">Buy Refurbished Products</Link>
                                     </li>
                                    
                                 </ul>

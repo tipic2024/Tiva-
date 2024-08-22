@@ -67,7 +67,8 @@ export default function Contactus() {
     <section className="bg-[#eee2cf]">
       <div id="map" className="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1875.1583426195327!2d73.75510487705466!3d19.95317983854194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb52e0bbf4d3%3A0x5ce55e9cb804ab85!2sSai%20Darshan%20Society%2C%2010%2C%20Prashant%20Nagar%2C%20Pathardi%20Phata%2C%20Nashik%2C%20Maharashtra%20422010!5e0!3m2!1sen!2sin!4v1716959946187!5m2!1sen!2sin"
+        
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15107.111086450346!2d73.8783757!3d18.8080545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c9e764d68103%3A0x827606a25a5153b9!2sTata%20International%20Vehicle%20Applications%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1724328040620!5m2!1sen!2sin"
           width="100%"
           height="480"
           style={{ border: '0' }}
@@ -165,9 +166,9 @@ export default function Contactus() {
                   <div className="flex items-center mb-6">
                     <div className='mb-10 text-gray-700 pl-14'>
                       <h6 className="text-xl font-semibold pr-56 mb-0 pb-3 ">Phone :</h6>
-                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">0213&nbsp;5627300</p>
-                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">0213&nbsp;5627300</p>
-                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">0213&nbsp;5627300</p>
+                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">+91&nbsp;7741085107</p>
+                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">+91&nbsp;7741085107</p>
+                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">+91&nbsp;7741085107</p>
                     </div>
                   </div>
                   {/* Add more contact details here if needed */}

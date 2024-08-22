@@ -88,7 +88,7 @@ const HeroSection = () => {
                <div className="mb-3">
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name"
+                id="lastname"
                 type="text"
                 placeholder="Last Name"
                 name="lastname"
@@ -102,7 +102,7 @@ const HeroSection = () => {
                <div className="mb-3">
                <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name"
+                id="location"
                 type="text"
                 placeholder="Your Location"
                 name="location"
@@ -145,10 +145,10 @@ const HeroSection = () => {
             <div className="mb-3">
                <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="name"
+                id="vehicle_registration_number"
                 type="text"
                 placeholder="Vehicle Registration Number"
-                name="location"
+                name="vehicle_registration_number"
                 value={formData.vehicle_registration_number}
                 onChange={handleChange}
                 required
@@ -158,9 +158,9 @@ const HeroSection = () => {
              
             <div className="mb-6">
               <select
-                id="vehicle Categories"
-                name="Vehicle Categories"
-                value={formData.vehicle_category}
+                id="vehicle_Categories"
+                name="Vehicle_Categories"
+                // value={formData.vehicle_category}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required

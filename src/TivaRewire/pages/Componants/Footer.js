@@ -29,9 +29,9 @@ function Footer() {
             <div className="flex flex-col space-y-4 pt-7">
               <div className="flex items-center">
                 <div className="ml-10 pl-10 text-lg font-serif">
-                  <p className="text-white dark:text-gray-300 font-sans">+91 840894840</p>
-                  <p className="text-white dark:text-gray-300 font-sans">+91 8007132800</p>
-                  <p className="text-white dark:text-gray-300 font-sans">+91 8408863840</p>
+                  <p className="text-white dark:text-gray-300 font-sans">+91 7741085107</p>
+                  <p className="text-white dark:text-gray-300 font-sans">+91 7741085107</p>
+                  <p className="text-white dark:text-gray-300 font-sans">+91 7741085107</p>
                 </div>
               </div>
             </div>
@@ -41,8 +41,8 @@ function Footer() {
             <p className="font-semibold text-white dark:text-white mb-4 pt-12">Quick Links</p>
             <div className="flex flex-col space-y-2 pt-6">
               <Link to="/" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer text-blue-500 hover:text-red-500 dark:hover:text-blue-400">Home</Link >
-              <Link to="/aboutuspage" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">About Us</Link >
-              <Link to="/admission" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">Scrap Your Vehicle</Link >
+              <Link to="/whoWeAre" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">About Us</Link >
+              <Link to="/ScrapVehicle" onClick={scrollToTop} className="text-white dark:text-gray-300 transition-colors duration-300 underline hover:cursor-pointer hover:text-red-500 text-blue-500 dark:hover:text-blue-400">Scrap Your Vehicle</Link >
             </div>
           </div>
           {/* Visit Us */}
