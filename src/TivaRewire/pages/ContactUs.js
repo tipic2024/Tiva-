@@ -154,19 +154,20 @@ export default function Contactus() {
                     <div className=''>
                     <h6 className="text-xl font-semibold pr-56 pb-3 pl-8 ">Address :</h6>
                       <p className="pl-14 text-left text-gray-700 dark:text-gray-300 align-middle flex justify-end text-lg font-sans">
-                      TIVA MOTORS PVT LTD<br />
-                      2/2 MITROL - DEEGHOT ROAD VILLAGE,<br />
-                      - DEEGHOT TEHSIL HODAL PALWAL<br />
-                      HARYANA &nbsp; 121105
+                      TATA INTERNATIONAL VEHICAL APPLICATIONS PVT LTD<br />
+                      Gat No. 281 & 284, <br />
+                      Village Santosh Nagar ,Waki,<br />
+                      Taluka Khed, Pune, Maharashtra 410501
                       </p>
                     </div>
+                
                   </div>
                   <div className="flex items-center mb-6">
                     <div className='mb-10 text-gray-700 pl-14'>
                       <h6 className="text-xl font-semibold pr-56 mb-0 pb-3 ">Phone :</h6>
-                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">+91 8408863840</p>
-                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">+91 840894840</p>
-                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">+91 8007132800</p>
+                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">0213&nbsp;5627300</p>
+                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">0213&nbsp;5627300</p>
+                      <p className="text-gray-700 dark:text-gray-300 pr-40 text-lg font-sans">0213&nbsp;5627300</p>
                     </div>
                   </div>
                   {/* Add more contact details here if needed */}

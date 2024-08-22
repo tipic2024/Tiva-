@@ -32,14 +32,14 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="w-full sticky top-0 left-0 lg:max-w-7xl z-40 flex bg-[#767171] max-w-7xl">
+        <nav className="w-full sticky top-0 left-0 lg:max-w-7xl z-40 flex bg-[#11186B] max-w-7xl">
             <div className={`flex justify-start ${navbar ? 'hidden' : 'block'}`}>
                 <Link to="/" onClick={handleLinkClick}>
                     <img className="opacity-100 mt-0 pt-0 object-scale-down h-12 w-10 md:h-16 ml-1 md:w-20 md:object-scale-down bg-transparent" src={Logo} alt="Logo" />
                 </Link>
                 <h1 className="text-white text-xl md:text-2xl lg:text-3xl font-serif pt-3 pl-1 uppercase">Tiva Rewire</h1>
             </div>
-            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 bg-[#767171] lg:h-16">
+            <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8 bg-[#11186B] lg:h-16">
                 <div>
                     <div className="flex items-center justify-evenly py-3 md:py-5 md:block">
                         <div className="md:hidden">
@@ -86,7 +86,11 @@ export default function Navbar() {
                             <li className="text-white hover:text-white font-serif uppercase hover:bg-gray-700 px-4 py-2 rounded-md">
                                 <Link to="/" onClick={handleLinkClick}>Home</Link>
                             </li>
-                            <li className="group max-lg:border-b max-lg:py-2 relative">
+
+                            <li className="text-white hover:text-white font-serif uppercase hover:bg-gray-700 px-4 py-2 rounded-md">
+                                <Link to="/About-us" onClick={handleLinkClick}>ABOUT US</Link>
+                            </li>
+                            {/* <li className="group max-lg:border-b max-lg:py-2 relative">
                                 <button onClick={toggleDropdownAbout} className="hover:text-white lg:pt-2 text-white text-[15px] font-serif lg:hover:fill-[#007bff] block uppercase">
                                     About Us
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block" viewBox="0 0 24 24">
@@ -105,7 +109,7 @@ export default function Navbar() {
                                     </li>
                                     
                                 </ul>
-                            </li>
+                            </li> */}
 
                             <li className="group max-lg:border-b max-lg:py-2 relative">
                                 <button onClick={toggleDropdownAdmission} className="hover:text-white lg:pt-2 text-white text-[15px] font-serif lg:hover:fill-[#007bff] block uppercase">
@@ -132,7 +136,7 @@ export default function Navbar() {
                                 <Link to="/events" onClick={handleLinkClick}>Events</Link>
                             </li> */}
                              <li className="text-white hover:text-white font-serif hover:bg-gray-700 px-4 py-2 rounded-md uppercase">
-                                <Link to="/Contact-us" onClick={handleLinkClick}>FAQs</Link>
+                                <Link to="/FAQs" onClick={handleLinkClick}>FAQs</Link>
                             </li>
 
                             <li className="text-white hover:text-white font-serif hover:bg-gray-700 px-4 py-2 rounded-md uppercase">
