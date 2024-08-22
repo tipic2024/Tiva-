@@ -4,6 +4,9 @@ import Navbar from './pages/Componants/Navbar';
 import Footer from './pages/Componants/Footer';
 import Home from './pages/Home';
 import Contactus from './pages/ContactUs';
+import FAQ from './pages/FAQ';
+import BoardOfDirector from './pages/BoardOfDirector';
+import Scrap from './pages/ScrapYourVehicle';
 
 function PageRoutes() {
   return (
@@ -13,6 +16,11 @@ function PageRoutes() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/Contact-us" element={<Contactus/>} />
+                <Route path="/About-us" element={<BoardOfDirector/>} />
+                <Route path="/FAQs" element={<FAQ/>} />
+                <Route path="/ScrapVehicle" element={<Scrap/>} />
+
+                
 
 
                 

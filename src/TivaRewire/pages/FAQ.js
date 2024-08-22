@@ -3,7 +3,11 @@ import { Accordion } from "flowbite-react";
 
 function FAQ() {
   return (
-    <div>FAQ
+    <div>
+      
+      <div className='flex justify-center'>
+        <h1 className='text-4xl mt-6'>Frequently Asked Questions</h1>
+        </div>
 
 <Accordion className='m-3 lg:flex-col grid-cols-2 lg:ml-44   lg:mr-44 lg:mt-10'>
       <Accordion.Panel className=''>
@@ -19,8 +23,7 @@ function FAQ() {
         <Accordion.Title>How Tiva Rewire  works?</Accordion.Title>
         <Accordion.Content>
           <p className="mb-2 text-black dark:text-black text-start">
-            Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
-            has a design equivalent in our Figma file.
+          In the coming years, all vehicles older than 15 years will be required to undergo a mandatory fitness test. Vehicles that fail the test will have a limited time to obtain a fitness certificate. If the owner fails to do so, the vehicle will be classified as End-Of-Life and must be deregistered on the Vahan Portal with assistance from an RVSF.
           
           </p>
         </Accordion.Content>
@@ -29,9 +32,8 @@ function FAQ() {
         <Accordion.Title>Why should I scrap vehicle with REWIRE? </Accordion.Title>
         <Accordion.Content>
           <p className="mb-2 text-black dark:text-black text-start">
-            The main difference is that the core components from Flowbite are open source under the MIT license, whereas
-            Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone
-            components, whereas Tailwind UI offers sections of pages.
+          However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no
+          technical reason stopping you from using the best of two worlds.
           </p>
           <p className="mb-2 text-black dark:text-black text-start">
             However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no
