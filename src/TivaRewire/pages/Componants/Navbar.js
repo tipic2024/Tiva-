@@ -87,10 +87,10 @@ export default function Navbar() {
                                 <Link to="/" onClick={handleLinkClick}>Home</Link>
                             </li>
 
-                            <li className="text-white hover:text-white font-serif uppercase hover:bg-gray-700 px-4 py-2 rounded-md">
+                            {/* <li className="text-white hover:text-white font-serif uppercase hover:bg-gray-700 px-4 py-2 rounded-md">
                                 <Link to="/About-us" onClick={handleLinkClick}>ABOUT US</Link>
-                            </li>
-                            {/* <li className="group max-lg:border-b max-lg:py-2 relative">
+                            </li> */}
+                            <li className="group max-lg:border-b max-lg:py-2 relative">
                                 <button onClick={toggleDropdownAbout} className="hover:text-white lg:pt-2 text-white text-[15px] font-serif lg:hover:fill-[#007bff] block uppercase">
                                     About Us
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" className="ml-1 inline-block" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function Navbar() {
                                     </li>
                                     
                                 </ul>
-                            </li> */}
+                            </li>
 
                             <li className="group max-lg:border-b max-lg:py-2 relative">
                                 <button onClick={toggleDropdownAdmission} className="hover:text-white lg:pt-2 text-white text-[15px] font-serif lg:hover:fill-[#007bff] block uppercase">

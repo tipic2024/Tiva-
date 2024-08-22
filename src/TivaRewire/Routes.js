@@ -8,6 +8,7 @@ import FAQ from './pages/FAQ';
 import BoardOfDirector from './pages/BoardOfDirector';
 import Scrap from './pages/ScrapYourVehicle';
 import SpareParts from './pages/Componants/SpareParts';
+import MediaCoverage from './pages/MediaCoverage';
 
 
 function PageRoutes() {
@@ -18,10 +19,13 @@ function PageRoutes() {
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/Contact-us" element={<Contactus/>} />
-                <Route path="/About-us" element={<BoardOfDirector/>} />
+                <Route path="/whoWeAre" element={<BoardOfDirector/>} />
                 <Route path="/FAQs" element={<FAQ/>} />
                 <Route path="/ScrapVehicle" element={<Scrap/>} />
                 <Route path="/SpareParts" element={<SpareParts/>} />
+                <Route path="/mediaAndNews" element={<MediaCoverage/>} />
+
+
 
 
                 
