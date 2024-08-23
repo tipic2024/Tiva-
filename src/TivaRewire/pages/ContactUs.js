@@ -39,7 +39,7 @@ export default function Contactus() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'contact.php',
+        'https://tiva-rewire.tipic.co.in/api/contactUs',
         formData,
         {
           headers: {

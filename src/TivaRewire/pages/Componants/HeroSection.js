@@ -7,10 +7,10 @@ import { motion } from 'framer-motion';
  
 const HeroSection = () => {
   const initialFormData = {
-    firstname: '',
-    lastname: '',
+    first_name: '',
+    last_name: '',
     email: '',
-    mobileNumber: '',
+    mobile: '',
     vehicle_category: '',
     vehicle_registration_number: '',
     location:''
@@ -31,9 +31,9 @@ const HeroSection = () => {
     e.preventDefault();
     console.log("Called Successfully", formData);
     try {
-      const response = await axios.post('enquiry.php', formData);
+      const response = await axios.post('https://tiva-rewire.tipic.co.in/api/contactUs', formData);
       console.log('Response:', response.data);
-      if (response.data === "SUCCESS") {
+      if (response.data.message === "Contact information saved successfully") {
         setSubmissionStatus('success');
         setFormData(initialFormData);
       } else {
@@ -77,25 +77,25 @@ const HeroSection = () => {
                 id="name"
                 type="text"
                 placeholder="First Name"
-                name="firstname"
-                value={formData.firstname}
+                name="first_name"
+                value={formData.first_name}
                 onChange={handleChange}
                 required
-                pattern="^[A-Za-z\s]+$"
+                // pattern="^[A-Za-z\s]+$"
                 title="Please enter only alphabets."
               />
                </div>
                <div className="mb-3">
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="lastname"
+                id="last_name"
                 type="text"
                 placeholder="Last Name"
-                name="lastname"
-                value={formData.lastname}
+                name="last_name"
+                value={formData.last_name}
                 onChange={handleChange}
                 required
-                pattern="^[A-Za-z\s]+$"
+                // pattern="^[A-Za-z\s]+$"
                 title="Please enter only alphabets."
               />
                </div>
@@ -122,7 +122,7 @@ const HeroSection = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                // pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                 required
                 title="Please enter a valid email address in the format test@gmail.com."
               />
@@ -130,11 +130,11 @@ const HeroSection = () => {
             <div className="mb-3">
               <input
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="mobileNumber"
+                id="mobile"
                 type="text"
                 placeholder="Mobile Number"
-                name="mobileNumber"
-                value={formData.mobileNumber}
+                name="mobile"
+                value={formData.mobile}
                 onChange={handleChange}
                 pattern="[0-9]{10}"
                 required
@@ -158,17 +158,17 @@ const HeroSection = () => {
              
             <div className="mb-6">
               <select
-                id="vehicle_Categories"
-                name="Vehicle_Categories"
+                id="vehicle_category"
+                name="vehicle_category"
                 // value={formData.vehicle_category}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
               >
-                <option value="">Vehicle Type </option>
-                <option value="male">Four Wheeler</option>
-                <option value="male">Heavy Goods Vehicle</option>
-                <option value="female">Others</option>
+                  <option value="">Vehicle Type</option>
+                  <option value="four_wheeler">Four Wheeler</option>
+                  <option value="heavy_goods_vehicle">Heavy Goods Vehicle</option>
+                  <option value="others">Others</option>
               </select>
             </div>
            

@@ -6,7 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
 
-import Logo from '../../Logos/Tata_Logo.png'; // Adjust the import according to your file structure
+import Logo from '../../Logos/rewireLogoTransperant.png'; // Adjust the import according to your file structure
 
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
